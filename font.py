@@ -141,8 +141,8 @@ y_train = tensorflow.keras.utils.to_categorical(y_train, num_classes=3)
 y_val = tensorflow.keras.utils.to_categorical(y_val, num_classes=3)
 y_test = tensorflow.keras.utils.to_categorical(y_test, num_classes=3)
 
-y_train = tensorflow.constant(y_train, shape=[17588,3])
-y_val = tensorflow.constant(y_val, shape=[8638, 3])
+y_train = tensorflow.constant(y_train, shape=[26070,3])
+y_val = tensorflow.constant(y_val, shape=[12238, 3])
 y_test = tensorflow.constant(y_test, shape=[8198, 3])
 
 tensorflow.dtypes.cast(y_train, tensorflow.uint8)
